@@ -5,6 +5,7 @@ export const sequelize = new Sequelize(
   "bd_proiect_tw", "sa", "sa", {
   host: "localhost",
   dialect: "mssql",
+  port : 1334,
   dialectOptions: {
     options: {
       //instanceName:"DESKTOP-L929KG2",

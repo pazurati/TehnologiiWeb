@@ -317,7 +317,7 @@ router.route("/users").post((req, res) => {
 
   //validare parola
   var pass = /^[A-Za-z]\w{7,14}$/;
-  if (!req.body.parola.match(pass)) {
+  if (req.body.parola.match(pass)) {
     return res.status(500).json({
       message: "Invalid password"
     });
